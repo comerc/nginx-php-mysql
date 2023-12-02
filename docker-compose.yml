@@ -1,0 +1,82 @@
+version: '3.6'
+name: nginx-php-mysql
+services:
+  nginx:
+    image: nginx:1.25
+    # extra_hosts:
+    #   - 'dummy:127.0.0.1'
+    # container_name: dummy-nginx
+    # hostname: dummy-nginx
+    # build: ./volumes/build/nginx
+    volumes:
+      - ./var/log/nginx:/var/log/nginx
+      - ./volumes/etc/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./volumes/etc/nginx/sites-enabled:/etc/nginx/sites-enabled:ro
+      - ./volumes/etc/nginx/ssl:/etc/nginx/ssl:ro
+      - ./var/www/dummy:/var/www/dummy
+    ports:
+      - '80:80'
+      # - '443:443'
+    depends_on:
+      - php
+    # links:
+    #   - php
+    restart: always
+    # networks:
+    #   - tools-php-network
+    networks:
+      default:
+        ipv4_address: 172.16.1.4
+  php:
+    # image: php:8.1-fpm
+    # container_name: dummy-php-fpm
+    # hostname: dummy-php-fpm
+    build: ./volumes/build/php-fpm8.1
+    # ports:
+    #   - '9000:9010'
+    volumes:
+      - ./volumes/etc/php/fpm.pool.d/domain.conf:/usr/local/etc/php-fpm.d/domain.conf:ro
+      - ./volumes/etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini:ro
+      - ./var/log/php:/var/log/php
+      - ./var/www/dummy:/var/www/dummy
+    cap_add:
+      - SYS_NICE
+      - DAC_READ_SEARCH
+    depends_on:
+      - mysql
+    restart: always
+    # networks:
+    #   - tools-php-network
+    networks:
+      default:
+        ipv4_address: 172.16.1.5
+  mysql:
+    image: mysql:8.2
+    # container_name: dummy-mysql
+    # hostname: dummy-mysql
+    # build: ./volumes/build/mysql
+    # ports:
+    #   - '3310:3310'
+    volumes:
+      - ./var/lib/mysql:/var/lib/mysql #Директория БД.
+      - ./var/log/mysql:/var/log/mysql #log файл
+      - ./volumes/mysql/conf.d:/etc/mysql/conf.d:ro #Конфигурация mysql.
+    # networks:
+    #   - tools-php-network
+    networks:
+      default:
+        ipv4_address: 172.16.1.6
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+networks:
+  # tools-php-network:
+  #   driver: bridge
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24
+# TODO
+# volumes:
+#   db_data:
+

@@ -1,0 +1,151 @@
+[02-Dec-2023 14:31:36 Europe/Moscow] PHP Parse error:  syntax error, unexpected token "=>" in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 14:43:48 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:45:03 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:45:23 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:45:29 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:45:29 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:45:29 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:45:43 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_connect() in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 14:53:10 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: could not find driver in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): PDO->__construct('mysql:host=loca...', 'newuser', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:00:57 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: could not find driver in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): PDO->__construct('mysql:host=loca...', 'newuser', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:01:35 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:01:36 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:01:36 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:02:06 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:02:07 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:02:08 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:02:08 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:08:23 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:08:25 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:09:33 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:10:44 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:10:45 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:12:45 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:2
+Stack trace:
+#0 /var/www/dummy/data/index.php(2): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 2
+[02-Dec-2023 15:18:38 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('localhost', 'newuser', 'my_password', 'password')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:20:13 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: No such file or directory in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('localhost', 'newuser', 'password', 'mydatabase')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:22:10 Europe/Moscow] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo for dummy failed: Name or service not known in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:22:10 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for dummy failed: Name or service not known in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('dummy', 'newuser', 'password', 'mydatabase')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:22:11 Europe/Moscow] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo for dummy failed: Name or service not known in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:22:11 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for dummy failed: Name or service not known in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('dummy', 'newuser', 'password', 'mydatabase')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:22:50 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('172.16.1.6', 'newuser', 'password', 'mydatabase')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:24:27 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('172.16.1.6', 'newuser', 'password', 'mydatabase', '3310')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:24:27 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('172.16.1.6', 'newuser', 'password', 'mydatabase', '3310')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 15:24:28 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('172.16.1.6', 'newuser', 'password', 'mydatabase', '3310')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
+[02-Dec-2023 16:08:31 Europe/Moscow] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /var/www/dummy/data/index.php:3
+Stack trace:
+#0 /var/www/dummy/data/index.php(3): mysqli_connect('mysql', 'newuser', 'password', 'mydatabase')
+#1 {main}
+  thrown in /var/www/dummy/data/index.php on line 3
