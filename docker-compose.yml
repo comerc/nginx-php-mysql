@@ -22,11 +22,11 @@ services:
     # links:
     #   - php
     restart: always
-    # networks:
-    #   - tools-php-network
     networks:
-      default:
-        ipv4_address: 172.16.1.4
+      - tools-php-network
+    # networks:
+    #   default:
+    #     ipv4_address: 172.16.1.4
   php:
     # image: php:8.1-fpm
     # container_name: dummy-php-fpm
@@ -39,17 +39,17 @@ services:
       - ./volumes/etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini:ro
       - ./var/log/php:/var/log/php
       - ./var/www/dummy:/var/www/dummy
-    cap_add:
-      - SYS_NICE
-      - DAC_READ_SEARCH
+    # cap_add:
+    #   - SYS_NICE
+    #   - DAC_READ_SEARCH
     depends_on:
       - mysql
     restart: always
-    # networks:
-    #   - tools-php-network
     networks:
-      default:
-        ipv4_address: 172.16.1.5
+      - tools-php-network
+    # networks:
+    #   default:
+    #     ipv4_address: 172.16.1.5
   mysql:
     image: mysql:8.2
     # container_name: dummy-mysql
@@ -58,24 +58,24 @@ services:
     # ports:
     #   - '3310:3310'
     volumes:
-      - ./var/lib/mysql:/var/lib/mysql #Директория БД.
-      - ./var/log/mysql:/var/log/mysql #log файл
-      - ./volumes/mysql/conf.d:/etc/mysql/conf.d:ro #Конфигурация mysql.
-    # networks:
-    #   - tools-php-network
+      - ./var/lib/mysql:/var/lib/mysql
+      - ./var/log/mysql:/var/log/mysql
+      - ./volumes/mysql/conf.d:/etc/mysql/conf.d:ro
     networks:
-      default:
-        ipv4_address: 172.16.1.6
+      - tools-php-network
+    # networks:
+    #   default:
+    #     ipv4_address: 172.16.1.6
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=true
 networks:
-  # tools-php-network:
-  #   driver: bridge
-  default:
+  tools-php-network:
     driver: bridge
-    ipam:
-      config:
-        - subnet: 172.16.1.0/24
+  # default:
+  #   driver: bridge
+  #   ipam:
+  #     config:
+  #       - subnet: 172.16.1.0/24
 # TODO
 # volumes:
 #   db_data:

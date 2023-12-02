@@ -1,5 +1,8 @@
 # nginx-php-mysql
 
+- https://github.com/compose-spec/compose-spec
+- https://docs.docker.com/compose/compose-file/compose-file-v3/
+
 ```bash
 mkdir var/lib/mysql var/log/mysql var/log/nginx var/log/php
 ```
