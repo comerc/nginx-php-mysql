@@ -1,5 +1,5 @@
-var/lib/mysql
-var/log/mysql
-var/log/nginx
-var/log/php
-var/www/dummy/log/php-fpm/fpm-php.log
+# var/lib/mysql
+# var/log/mysql
+# var/log/nginx
+# var/log/php
+# var/www/dummy/log/php-fpm/fpm-php.log
