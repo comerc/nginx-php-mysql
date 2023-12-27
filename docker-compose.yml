@@ -77,6 +77,11 @@ networks:
   #     config:
   #       - subnet: 172.16.1.0/24
 # TODO
+# networks:
+#   outside:
+#     name: "host"
+#     external: true
+# TODO
 # volumes:
 #   db_data:
 
